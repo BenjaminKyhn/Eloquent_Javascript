@@ -4,3 +4,5 @@ function min (a, b){
     else if (b < a)
         return b;
 }
+
+console.log(min(6, 4))
