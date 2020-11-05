@@ -5,19 +5,19 @@ class Group {
 
     add(value) {
         if (!this.has(value))
-            this.group.push(value);
+            this.members.push(value);
     }
 
     delete(value) {
         if (this.has(value)) {
-            let pos = this.group.indexOf(value);
-            this.group.splice(pos, 1);
+            let pos = this.members.indexOf(value);
+            this.members.splice(pos, 1);
         }
 
     }
 
     has(value) {
-        return this.group.includes(value);
+        return this.members.includes(value);
     }
 
     static from(collection) {
